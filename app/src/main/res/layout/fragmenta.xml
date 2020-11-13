@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/framea"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmenta">
+
+    <Button
+        android:id="@+id/btn_jump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="72dp"
+        android:backgroundTint="?attr/colorButtonNormal"
+        android:text="Jump"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/btn_run"
+        app:layout_constraintStart_toStartOf="@+id/btn_idle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_idle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="23dp"
+        android:backgroundTint="?attr/colorButtonNormal"
+        android:text="Idle"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_jump" />
+
+    <Button
+        android:id="@+id/btn_crouch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="65dp"
+        android:backgroundTint="?attr/colorButtonNormal"
+        android:text="Crouch"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/btn_run"
+        app:layout_constraintTop_toBottomOf="@+id/btn_idle" />
+
+    <Button
+        android:id="@+id/btn_run"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:backgroundTint="?attr/colorButtonNormal"
+        android:text="Run"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/btn_crouch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_attack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="?attr/colorButtonNormal"
+        android:text="Attack"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_run"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_run" />
+</androidx.constraintlayout.widget.ConstraintLayout>
